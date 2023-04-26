@@ -1,4 +1,4 @@
-# handle-file-upload
+# Function_Files
 
 Storage service of the medium article **Developing a Simple Distributed System in Azure Cloud Platform**, which is a requiremnt the of course module SENG 41283 : Distributed and Cloud Computing .
 

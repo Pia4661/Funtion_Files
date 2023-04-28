@@ -15,7 +15,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@v2
@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: 'Resolve Project Dependencies Using Npm'
-        shell: pwsh
+        shell: bash
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm install
@@ -41,4 +41,4 @@ jobs:
           app-name: 'uof-function'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F49E015DD46342698B201ED4E65198B8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_957F4227B01441509B3C0607962E09C2 }}

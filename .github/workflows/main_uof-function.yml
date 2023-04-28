@@ -41,4 +41,4 @@ jobs:
           app-name: 'uof-function'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B7A3E8F7784841B38B2391E2FE83FCF4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F49E015DD46342698B201ED4E65198B8 }}
